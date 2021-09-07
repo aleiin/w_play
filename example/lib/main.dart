@@ -27,6 +27,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool isPlay = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,8 +40,15 @@ class _MyHomePageState extends State<MyHomePage> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           color: Colors.white,
-          child: Player(
-            size: Size(100, 100),
+          child: InkWell(
+            onTap: () {
+              isPlay = !isPlay;
+              setState(() {});
+            },
+            child: Player(
+              isPlays: isPlay,
+              size: Size(100, 100),
+            ),
           ),
         ),
       ),

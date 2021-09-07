@@ -1,7 +1,8 @@
 name: w_play
 description: A new Flutter project.
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/aleiin
+repository: https://github.com/aleiin/w_play
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
